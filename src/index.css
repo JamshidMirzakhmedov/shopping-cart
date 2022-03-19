@@ -29,10 +29,22 @@ nav {
   z-index: 5;
   padding: 1rem;
 }
+@media (max-width: 767px) {
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+  .btnq {
+    width: 50px;
+  }
+}
 @media (min-width: 767px) {
   .cart {
     top: 5rem;
     bottom: unset;
+  }
+  .btnq {
+    width: 50px;
   }
 }
 .bsk {
