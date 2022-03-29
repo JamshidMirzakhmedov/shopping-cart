@@ -58,6 +58,7 @@ export function reducer(state, { type, payload }) {
         isBasketShow: !state.isBasketShow,
       };
     case "REMOVE_FROM_BASKET":
+      toast.error("Goods removed from basket successfully");
       return {
         ...state,
         order: state.order.filter((item) => item.id !== payload.id),
